@@ -94,11 +94,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  uint8_t pole[32]={1,0,1,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};
+  uint8_t pole[]={1,0,1,0,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0};
   uint32_t sos = 0b10101001110111011100101010000000;
   while (1)
   {
-	  for(uint8_t i=0;i<32;i++)
+	  for(uint8_t i=0;i<sizeof(pole);i++)
 	  {
 		  if(pole[i]==1)
 		  {
