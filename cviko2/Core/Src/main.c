@@ -82,21 +82,19 @@ void tlacitka(void) {
 
 		}
 
-
-		else if (old_s1 && !new_s1) { // falling edge
+		if (old_s1 && !new_s1) { // falling edge
 			off_time = Tick + LED_TIME_LONG;
 			LL_GPIO_SetOutputPin(LED2_GPIO_Port, LED2_Pin);
 		}
 
-
 		old_s1 = new_s1;
 		old_s2 = new_s2;
 		delay = Tick;
-		if (Tick > off_time) {
-			LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
-		}
-	}
 
+	}
+	if (Tick > off_time) {
+		LL_GPIO_ResetOutputPin(LED2_GPIO_Port, LED2_Pin);
+	}
 }
 /* USER CODE END 0 */
 
