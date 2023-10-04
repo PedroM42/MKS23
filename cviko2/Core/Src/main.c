@@ -58,15 +58,15 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void blikac(void)
- {
- static uint32_t delay;
+void blikac(void) {
+	static uint32_t delay;
 
- if (Tick > delay + LED_TIME_BLINK) {
-	 LL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
-	 delay = Tick;
- }
- }
+	if (Tick > delay + LED_TIME_BLINK) {
+		LL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+		delay = Tick;
+	}
+}
+
 void tlacitka(void) {
 	static uint32_t delay;
 	static uint32_t old_s2;
