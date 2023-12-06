@@ -1,0 +1,8 @@
+../Core/Src/main.c:66:13:step	24	static
+../Core/Src/main.c:75:13:circle	40	static
+../Core/Src/main.c:103:13:smile	16	static
+../Core/Src/main.c:138:5:main	8	static
+../Core/Src/main.c:195:6:SystemClock_Config	88	static
+../Core/Src/main.c:241:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:274:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:364:6:Error_Handler	4	static,ignoring_inline_asm
