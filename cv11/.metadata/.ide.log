@@ -1410,3 +1410,4 @@
 2023-12-06 17:38:55,301 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
 2023-12-06 17:38:57,312 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
 2023-12-06 17:38:59,322 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-12-06 17:47:46,048 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
